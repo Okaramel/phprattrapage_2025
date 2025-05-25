@@ -16,7 +16,7 @@
                 <a href="/phprattrapage_2025/app/views/form.php">Formulaire</a>
             </li>
             <li class="list_item">
-                <a href="/phprattrapage_2025/app/views/user.php">Espace utilisateur</a>
+                <a href="/phprattrapage_2025/app/views/orders.php">Commandes</a>
             </li>
         </ul>
     </header>
