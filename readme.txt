@@ -9,7 +9,7 @@ Pour installer le projet :
 db_user=""
 db_pwd=""
 db_name=""``
-5- N'oubliez pas de mettre .gitignore et de mettre le .env et le vendor
+5- N'oubliez pas de mettre .gitignore et de mettre dedans le .env et le vendor
 6- Tout est bon !
 
 lien de la vidéo : https://youtu.be/NFqReDV4tt0
