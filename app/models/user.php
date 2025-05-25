@@ -11,21 +11,24 @@ class User extends Bdd {
     private string $last_name;
     private string $first_name;
     private string $adress;
+    private string $dish;
 
-    public function __construct(string $last_name = '', string $first_name = '', string $adress = '') {
+    public function __construct(string $last_name = '', string $first_name = '', string $adress = '', string $dish = '') {
         parent::__construct();
         $this->last_name = $last_name;
         $this->first_name = $first_name;
         $this->adress = $adress;
+        $this->dish = $dish;
     }
 
     public function save(): bool {
-        $sql = "INSERT INTO users (last_name, first_name, adress) VALUES (:last_name, :first_name, :adress)";
+        $sql = "INSERT INTO users (last_name, first_name, adress, dish) VALUES (:last_name, :first_name, :adress, :dish)";
         $stmt = $this->co->prepare($sql);
         return $stmt->execute([
             ':last_name' => $this->last_name,
             ':first_name' => $this->first_name,
-            ':adress' => $this->adress
+            ':adress' => $this->adress,
+            ':dish' => $this->dish
         ]);
     }
 

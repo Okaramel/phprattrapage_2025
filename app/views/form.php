@@ -28,8 +28,18 @@
             <label for="first_name">Prénom :</label>
             <input type="text" name="first_name" id="first_name" required><br>
 
-            <label for="adress">Adresse</label>
+            <label for="adress">Adresse :</label>
             <input type="text" name="adress" id="adress" required><br>
+
+            <label for="dish">La salade souhaitée :</label>
+            <select name="dish" id="dish" required>
+                <option value="">-- Sélectionner une salade --</option>
+                <option value="salade_roquette">Salade de roquette aux figues et aux poires</option>
+                <option value="salade_chevre">Salade au chèvre chaud</option>
+                <option value="salade_cesar">Salade César</option>
+                <option value="salade_printaniere">Salade printanière</option>
+            </select>
+
 
             <button type="submit">Envoyer</button>
         </form>
