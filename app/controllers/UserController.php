@@ -1,16 +1,32 @@
 <?php
 
-require_once __DIR__ . '/../utils/db.php';
+require_once __DIR__ . '/../models/User.php';
 
-class UserController extends Bdd
+use App\models\User;
+
+class UserController
 {
-    public function __construct() {
-        parent::__construct(); // initialise la connexion
+    public function getUsers(): array {
+        $user = new User();
+        return $user->all();
     }
 
-    public function getUsers() {
-        $sql = "SELECT * FROM users";
-        $stmt = $this->co->query($sql);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    public function addUser(string $last_name, string $first_name, string $adress): void {
+        $user = new User($last_name, $first_name, $adress);
+        $user->save();
     }
+
+    public function handleFormSubmission(array $formData): void {
+        $last_name = htmlspecialchars($formData['last_name'] ?? '');
+        $first_name = htmlspecialchars($formData['first_name'] ?? '');
+        $adress = htmlspecialchars($formData['adress'] ?? '');
+    
+        // Validation simple (optionnelle ici)
+        if (empty($last_name) || empty($first_name) || empty($adress)) {
+            throw new Exception("Tous les champs sont obligatoires.");
+        }
+    
+        $this->addUser($last_name, $first_name, $adress);
+    }
+    
 }

@@ -10,7 +10,7 @@
     <header>
         <ul class="list">
             <li class="list_item">
-                <a href="/phprattrapage_2025/index.php">Accueil</a>
+                <a href="/">Accueil</a>
             </li>
             <li class="list_item">
                 <a href="/phprattrapage_2025/app/views/form.php">Formulaire</a>
@@ -21,16 +21,6 @@
         </ul>
     </header>
     <main>
-       <h1>Liste des utilisateurs</h1>
-       <?php if (empty($users)): ?>
-            <p>Aucun utilisateur trouvé.</p>
-        <?php else: ?>
-            <?php foreach ($users as $user): ?>
-                <div class="user">
-                    <p><?= htmlspecialchars($user['last_name']) ?></p>
-                </div>
-            <?php endforeach; ?>
-       <?php endif; ?>
     </main>
 </body>
 </html>
