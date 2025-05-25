@@ -28,7 +28,7 @@ class UserController
         $adress = htmlspecialchars($formData['adress'] ?? '');
         $dish = htmlspecialchars($formData['dish'] ?? '');
     
-        // Validation simple (optionnelle ici)
+        // Validation simple (obligatoire ici pour pas d'erreur)
         if (empty($last_name) || empty($first_name) || empty($adress) || empty($dish)) {
             throw new Exception("Tous les champs sont obligatoires.");
         }

@@ -36,10 +36,10 @@
             <label for="dish">La salade souhaitée :</label>
             <select name="dish" id="dish" required>
                 <option value="">-- Sélectionner une salade --</option>
-                <option value="salade_roquette">Salade de roquette aux figues et aux poires</option>
-                <option value="salade_chevre">Salade au chèvre chaud</option>
-                <option value="salade_cesar">Salade César</option>
-                <option value="salade_printaniere">Salade printanière</option>
+                <option value="Salade Roquette">Salade de roquette aux figues et aux poires</option>
+                <option value="Salade Chèvre">Salade au chèvre chaud</option>
+                <option value="Salade Cesar">Salade César</option>
+                <option value="Salade Printanière">Salade printanière</option>
             </select>
 
 
