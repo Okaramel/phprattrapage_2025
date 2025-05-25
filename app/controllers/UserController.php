@@ -11,6 +11,12 @@ class UserController
         return $user->all();
     }
 
+    public function updateUserStatut($user_id, $new_statut) {
+        $user = new User();
+        $user->updateStatut($user_id, $new_statut);
+    }
+    
+
     public function addUser(string $last_name, string $first_name, string $adress, string $dish, float $price, string $statut): void {
         $user = new User($last_name, $first_name, $adress, $dish, $price, $statut);
         $user->save();

@@ -26,6 +26,16 @@ class User extends Bdd {
         $this->statut = $statut;
     }
 
+    public function updateStatut($id, $new_statut): bool {
+        $sql = "UPDATE users SET statut = :statut WHERE id = :id";
+        $stmt = $this->co->prepare($sql);
+        return $stmt->execute([
+            ':statut' => $new_statut,
+            ':id' => $id
+        ]);
+    }
+    
+
     public function save(): bool {
         $sql = "INSERT INTO users (last_name, first_name, adress, dish, price, statut) VALUES (:last_name, :first_name, :adress, :dish, :price, :statut)";
         $stmt = $this->co->prepare($sql);

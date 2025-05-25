@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Ajouter un utilisateur</title>
+<meta charset="UTF-8">
+    <title><?= htmlspecialchars('Mongoo | Salade sur mesure') ?></title>
+    <link rel="stylesheet" href="/phprattrapage_2025/public/css/style.css">
+    <link rel="icon" href="/phprattrapage_2025/public/images/logo.ico" type="image/x-icon">
 </head>
 <body>
 <header>
