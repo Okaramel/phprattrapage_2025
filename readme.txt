@@ -1,4 +1,4 @@
-## Projet Rattrapage Architecture Orienté Objet sur le thème de la chaîne de restauration de Mongoo
+## Projet Rattrapage Architecture Orienté Objet sur le thème de la chaîne de restauration de Mongoo par Mathilde MORELL
 
 Pour installer le projet :
 1- Cloner le projet
@@ -11,6 +11,8 @@ db_pwd=""
 db_name=""``
 5- N'oubliez pas de mettre .gitignore et de mettre le .env et le vendor
 6- Tout est bon !
+
+lien de la vidéo : https://youtu.be/NFqReDV4tt0
 
 Commentaires :
 Veuillez m'excusez de mon UI peu développé, je me suis concentrée plus sur le back et que sur le front.
