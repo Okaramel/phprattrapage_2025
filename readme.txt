@@ -13,6 +13,3 @@ db_name=""``
 6- Tout est bon !
 
 lien de la vidéo : https://youtu.be/NFqReDV4tt0
-
-Commentaires :
-Veuillez m'excusez de mon UI peu développé, je me suis concentrée plus sur le back et que sur le front.
